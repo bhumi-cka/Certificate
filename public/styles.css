@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+}
+
+.heading {
+    font-weight: 500;
+    color: white;
+}
+
+.main{
+    text-align: center;
+    font-family: Raleway;
+    width: 60%;
+    margin : auto;
+    margin-top: 50px;
+    border: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.top {
+    background-color: #5E17EB;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+p {
+    font-style: italic;
+    font-weight: 400;
+    margin: 0.3rem;
+    font-size: 1.2rem;
+}
+
+.name {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2rem;
+    margin-bottom: 5px;
+    margin-top: 1em;
+}
+
+.roll {
+  margin-top: 0;
+  margin-bottom: 1.85rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  margin-block: 25px;
+  margin-bottom: 40px;
+}
+
+.date , .signature {
+  margin-inline: 60px;
+}
