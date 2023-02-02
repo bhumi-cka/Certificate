@@ -12,9 +12,11 @@ body {
     font-family: Raleway;
     width: 60%;
     margin : auto;
-    margin-top: 50px;
-    border: 1px solid black;
+    margin-top: 40px;
+    border: 1px solid rgb(143, 143, 143);
     padding-bottom: 10px;
+    margin-bottom: 40px;
+    border-radius: 2px;
 }
 
 .top {
@@ -52,4 +54,25 @@ p {
 
 .date , .signature {
   margin-inline: 60px;
+}
+
+/* button */
+.download {
+    background-color: #5E17EB;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 8px;
+    font-size: 1.2rem;
+    border-radius: 4px;
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+}
+
+.download:hover {
+    background-color: #530ce2;
+    cursor: pointer;
 }

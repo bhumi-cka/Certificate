@@ -1,8 +1,17 @@
 import React from "react";
+import downloadjs from "downloadjs";
+import html2canvas from "html2canvas";
 import {info} from "./Input";
 
 function Certi() {
     const information = info;
+
+    const handleDownload = async () => {
+        const canvas = await html2canvas(document.querySelector(".main"));
+        const dataURL = canvas.toDataURL("image/png");
+        downloadjs(dataURL, "download.png", "image/png");
+    }
+
     return (
     <div>
         <div class="main">
@@ -19,7 +28,10 @@ function Certi() {
           <p class="signature">Signature:</p>
         </div>
         </div>
+        <div class="button-div">
+          <button class="download" onClick={handleDownload}>Download</button>
         </div>
+    </div>
     )
 }
 
